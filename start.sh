@@ -8,7 +8,7 @@ rm -rf /opt/mscp-tools/file/
 rm -rf /opt/mscp-tools/mscp-tools.zip
 rm -rf /opt/mscp-tools/msf_completion
 rm -rf /opt/mscp-tools/msf.sh
-wget -P /opt/mscp-tools http://registry.mig.ruijie.net:8000/ibns/dev/mscp-tools.zip
+# wget -P /opt/mscp-tools http://registry.mig.ruijie.net:8000/ibns/dev/mscp-tools.zip
 unzip /opt/mscp-tools/mscp-tools.zip -d /opt/mscp-tools
 cd /opt/mscp-tools/
 java -cp "/opt/mscp-tools/mscp-tools.jar" picocli.AutoComplete -n msf cn.com.ruijie.cli.CommandApplication -c cn.com.ruijie.cli.helper.CliFactory -f
